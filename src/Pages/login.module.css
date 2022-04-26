@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  width: 500px;
+}
+
+.formItemContainer label {
+  font-weight: 500;
+  margin: 5px 0;
+}
+.formItemContainer input {
+  border-radius: 5px;
+  border: 2px solid #d1d5db;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.registerContainer {
+  display: flex;
+  margin-top: 50px;
+}
+.registerContainer img {
+  width: 45%;
+}
+.registerContainer p {
+  margin-bottom: 150px;
+}
+.formContainer {
+  margin-right: 150px;
+}
+
+.submitButton {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1ca130;
+  border-radius: 100px;
+  padding: 15px 1px;
+  border: none;
+  width: 40%;
+  transition: all 0.5s;
+  text-align: center;
+  margin: 20px 0;
+}
+.submitButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.submitButton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.submitButton:active,
+.submitButton:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.footer {
+  margin-bottom: -150px;
+}
+footer ul li {
+  cursor: pointer;
+  color: #d1d5db;
+  transition: all 0.3s;
+}
+footer ul li:hover {
+  color: #a0a0a0;
+}
+
+@media (max-width: 900px) {
+  .registerContainer img {
+    display: none;
+  }
+}

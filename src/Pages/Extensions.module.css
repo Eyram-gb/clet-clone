@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #1ca130;
+  border-radius: 100px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.header nav a:hover {
+  background-color: #1ca130;
+  color: #fff;
+}
+.extensionsLink {
+  display: flex;
+  justify-content: center;
+}
+.extensionsLink a {
+  border: solid 2px #1ca130;
+  text-decoration: none;
+  color: #111;
+  padding: 30px 20px;
+  margin-right: 10px;
+}
+.extensionsLink a:hover {
+  background-color: #1ca130;
+  border-radius: 5px;
+}
+.extensionsCTA {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.extensionsCTA h1 {
+  font-size: 72px;
+  font-weight: 900;
+  margin: 0 auto;
+}
+.extensionsCTA h3 {
+  font-weight: 400;
+}
+.extensionsCTA p {
+  color: #64748b;
+}
+.downloadBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.downloadBtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1ca130;
+  border-radius: 100px;
+  padding: 5px 10px;
+  width: 30%;
+  transition: all 0.5s;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.downloadBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.downloadBtn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.downloadBtn:active,
+.downloadBtn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.downloadBtn img {
+  width: 10%;
+  margin-right: 5px;
+}
+
+.footer {
+  margin-bottom: -150px;
+}
+footer ul li {
+  cursor: pointer;
+  color: #d1d5db;
+  transition: all 0.3s;
+}
+footer ul li:hover {
+  color: #a0a0a0;
+}
+.secondQuery {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .firstQuery {
+    display: none;
+  }
+  .secondQuery {
+    display: block;
+  }
+  .extensionsCTA h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 auto;
+  }
+  .downloadBtn {
+    padding: 8px 10px;
+    width: 50%;
+  }
+  .extensionsLink {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 25%;
+  }
+  .extensionsLink a:not(last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .downloadBtn {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
